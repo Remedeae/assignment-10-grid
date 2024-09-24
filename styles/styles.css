@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    grid-template: 2fr 1fr 1fr repeat(3, 2fr)/ 2fr repeat(4, 1fr);
+    grid-gap: 3vh;
+    padding: 3vh;
+    height: 84vh;
+    width: 156vh;
+}
+.fig1-a {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: #007f5f;
+}
+.fig1-b {
+    grid-area: 3 / 1/ 5 / 2;
+    background-color: #2b9348;
+}
+.fig1-c {
+    grid-area: 5 / 1 / 7 / 2;
+    background-color: #55a630;
+}
+.fig2-a {
+    grid-area: 1 / 2 / 5 / 4;
+    background-color: #80b918;
+}
+.fig2-b {
+    grid-area: 5 / 2 / 6 / 3;
+    background-color: #aacc00;
+}
+.fig2-c {
+    grid-area: 6 / 2 / 7/ 3;
+    background-color: #bfd200;
+}
+.fig2-bc {
+    grid-area: 5 / 3 / 7 / 5;
+    background-color: #d4d700;
+}
+.fig3-abc {
+    grid-area: 1 / 4 / 5 / 6;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    grid-gap: 3vh;
+}
+.fig3-a {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #dddf00;
+}
+.fig3-b {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #eeef20;
+}
+.fig3-c {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: #ffff3f;
+}
+.fig3-d {
+    grid-area: 5 / 5 / 7 / 6;
+    background-color: #007f5f;
+}
+
+.titel {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    height: 16vh;
+    width: 156vh;
+}
+.titel > div {
+    display: flex;
+    align-items: center;
+    background-color: #9bc1bc;
+}
+p {
+    padding-left: 3vh;
+    font-size: 64px;
+    font-family: Helvetica;
+    font-weight: 700;
+}
